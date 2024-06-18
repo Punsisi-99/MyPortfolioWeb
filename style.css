@@ -24,6 +24,9 @@ html{
     justify-content: center;
     align-items: center;
 }
+.content{
+    max-width: 600px;
+}
 #home{
     background-image: url(./Img/portfolio-bg1.png);
     background-size: cover;
@@ -56,21 +59,27 @@ html{
     position: relative;
     color: white;
 }
-.change-text{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
 .change-text h3{
+    font-weight: 800;
+    font-size: 3rem;
     display: inline-flex;
     margin: 0;
     vertical-align: top;
+    color:white
+}
+.change-text h3 .word{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    color: rgb(226, 180, 30);
 }
 #home .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: rgb(0, 255, 234);
+    color: rgb(226, 180, 30);
+    font-weight: 600;
     background-color: transparent;
-    border: 2px solid aqua;
+    border: 2px solid rgb(226, 180, 30);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -80,8 +89,23 @@ html{
 }
 #home .cta:hover{
     color: black;
-    background-color: aqua;
+    background-color: #e2b41e;
 }
-#img{
-    
+.social-icon{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 40px;
+}
+.home-image{
+    position: relative;
+}
+.img-box{
+    text-align: center;
+}
+.img-box img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
