@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-----------------------------------------Header section--------------------------------------------*/
+header{
+    padding: 15px 5%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(49, 29, 1, 0.534);
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 15px 5%;
+    background: rgba(114, 97, 65, 0.644);
+}
+
+.navlist{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navlist li{
+    margin: 0 1rem;
+    font-size: 35px;
+}
+
+.navlist li a{
+    display: inline-flex;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist li a:hover, .navlist li a.active{
+    color: #ffcc24;
+    transform: scale(1.1);
+}
+
+header .logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+
+span{
+    color: rgb(226, 180, 30);
+}
+
+.menu-icon{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    /*background-color: #ffcc24;*/
+}
+
+.menu-icon .bar,
+.menu-icon::after,
+.menu-icon::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #ffcc24;
+    margin: 6px 0;
+    transition: .4s;
+}
+
+.menu-icon.active::before{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.menu-icon.active::after{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.menu-icon.active .bar{
+    opacity: 0;
+}
+
+/*-----------------------------------------End Header section--------------------------------------------*/
+
+/*-----------------------------------------Project section--------------------------------------------*/
+section{
+    padding: 0px 8%;
+    display: block;
+}
+
+.project{
+    position: relative;
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+
+.main-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-text h2{
+    color: black;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+
+/*-----------------------------------------End Project section--------------------------------------------*/

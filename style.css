@@ -327,6 +327,22 @@ section{
     text-align: justify;
 }
 
+.about-content h4{
+    font-size: 1.7rem;
+    margin-top: 20px;
+    color: orange;
+    font-weight: 600;
+    display: block;
+}
+
+.about-content h5{
+    font-size: 1.6rem;
+    margin-top: 5px;
+    color: color;
+    font-weight: 600;
+    display: block;
+}
+
 .about-btn{
     margin: 3rem;
     font-size: 1.5rem;
@@ -363,35 +379,126 @@ section{
 /*-----------------------------------------End About section style-----------------------------------------------*/
 
 /*-----------------------------------------Portfolio section style-----------------------------------------------*/
+.portfolio{
+    background-color: #ffa60038;
+    min-height: 130vh;
+    width: 100%;
+}
+
 .portfolio h2{
-    margin-bottom: 5rem;
+    margin-top: 4rem;
     color: black;
     font-size: 4rem;
     font-weight: 700;
+    text-align: center;
+}
+
+.portfolio h3{
+    font-size: 2.1rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #00000059;
+    margin-bottom: 3rem;
+}
+
+.portfolio .brief-content{
+    margin-bottom: 5rem;
+}
+.portfolio ul{
+    font-size: 2.3rem;
+    line-height: 2rem;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    list-style: none;
+}
+
+.portfolio ul li{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.portfolio ul li span{
+    color: #914d00;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.portfolio ul li span i{
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 .portfolio-container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .portfolio-container .portfolio-box{
-    flex: 1 1 30rem;
-    background: transparent;
-    padding: 3rem 2rem 4rem;
+    position: relative;
     border-radius: 3rem;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.19), 
+                6px 10px 10px rgba(0, 0, 0, 0.23);
+}
+
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(1, 1, 1, .6), #ffa500);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    border: .3rem solid #e2b41e;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
 }
 
-.portfolio-container .portfolio-box {
-    background-image: url(./Img/portfolio_img/projects.jpg);
-    width: 100px;
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+.portfolio-layer h4{
+    font-size: 3rem;
+    font-weight: 700;
 }
 
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: #ffa500;
+}
 /*-----------------------------------------End Portfolio section style-----------------------------------------------*/
 
 /*-----------------------------------------Responsive media--------------------------------------------*/
