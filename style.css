@@ -421,7 +421,7 @@ section{
 .portfolio ul li span{
     color: #914d00;
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .portfolio ul li span i{
