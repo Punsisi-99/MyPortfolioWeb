@@ -435,7 +435,6 @@ section{
     align-items: center;
     gap: 2.5rem;
 }
-
 .portfolio-container .portfolio-box{
     position: relative;
     border-radius: 3rem;
@@ -444,23 +443,20 @@ section{
     box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.19), 
                 6px 10px 10px rgba(0, 0, 0, 0.23);
 }
-
 .portfolio-box img{
     width: 100%;
     transition: .5s ease;
 }
-
 .portfolio-box:hover img{
     transform: scale(1.1);
 }
-
 .portfolio-box .portfolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(1, 1, 1, .6), #ffa500);
+    background: linear-gradient(rgb(255, 176, 57), #ffa500);
     color: white;
     display: flex;
     justify-content: center;
@@ -468,13 +464,14 @@ section{
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5s ease;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: 0.6s cubic-bezier(0, 0.6, 0.81, 0.45);
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: rotateY(0deg);
 }
 
-.portfolio-box:hover .portfolio-layer{
-    transform: translateY(0);
-}
 .portfolio-layer h4{
     font-size: 3rem;
     font-weight: 700;

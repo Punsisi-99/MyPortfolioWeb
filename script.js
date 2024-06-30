@@ -24,3 +24,14 @@ const certificatesCount = document.getElementById("certificates");
 function countProject(){
     let projects = portfolio-container.value;
 }
+
+//portfolio filter
+
+var mixer = mixitup('.project-container',{
+    selectors: {
+        target: '.project-box'
+    },
+    animation: {
+        duration: 500
+    }
+});

@@ -98,7 +98,7 @@ span{
 
 /*-----------------------------------------Project section--------------------------------------------*/
 section{
-    padding: 0px 5%;
+    padding: 0px 6%;
     display: block;
 }
 
@@ -128,13 +128,13 @@ section{
 }
 
 .fillter-btns button{
-    background-color: #ffcc24;
+    color: #ffcc24;
+    background-color: white ;
+    border: 2px solid #ffcc24;
     font-size: 1.5rem;
     padding: 12px 15px;
     border-radius: 5px;
-    border: none;
     font-weight: 600;
-    color: black;
     box-shadow: 0px 1px 2px 0 rgba(67, 65, 60, 0.3),
                 0px 2px 6px 2px rgba(67, 66, 60, 0.15);
     margin-right: 12px;
@@ -142,11 +142,9 @@ section{
     transition: all .3s ease;
 }
 
-.fillter-btns button:hover{
-    color: #ffcc24;
-    background-color: white ;
-    border: 2px solid #ffcc24;
-    transform: scale(1.1);
+.fillter-btns button:hover, button.mixitup-control-active{
+    color: black;
+    background-color: #ffcc24 ;
 }
 
 .fillter-btns a{
@@ -173,17 +171,112 @@ section{
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    gap: 2.5rem;
-    margin-top: 2rem;
+    gap: 3rem;
+    margin-top: 5rem;
 }
 
-.project-container img{
+.project-box{
+    position: relative;
     display: block;
+    cursor: pointer;
+    transition: .5s ease;
+    border-radius: 3px;
+    height: 100%;
+}
+
+.project-box:hover, .img-layer a:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 2px 0 rgba(67, 65, 60, 0.3),
+                0px 2px 6px 2px rgba(67, 66, 60, 0.15);
+
+}
+
+.project-content{
     width: 100%;
-    height: 60%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.project-box .img-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    flex-direction: row;
+    text-align: center;
+    padding:.5rem;
+    gap: 5rem;
+    background: #ffcc24;
+}
+
+.img-layer a{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 40%;
+    height: 100%;
+    padding: .5rem;
+    color: black;
     transition: .5s ease;
 }
 
+.project-content h3{
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.project-content h3 span{
+    color: #ffb224;
+}
+
+.project-content .tech{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: rgb(85, 77, 77);
+}
+
+.project-content .tech p i{
+    text-decoration: underline;
+}
+
+.project-content p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: rgb(85, 77, 77);
+
+}
+
 /*-----------------------------------------End Project section--------------------------------------------*/
+
+/*-----------------------------------------flyer section styling--------------------------------------------*/
+.flyers .linescroll .card{
+    padding: 25px 35px;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.flyers .linescroll .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-----------------------------------------flyer section styling--------------------------------------------*/
