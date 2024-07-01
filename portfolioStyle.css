@@ -267,9 +267,21 @@ img{
 /*-----------------------------------------End Project section--------------------------------------------*/
 
 /*-----------------------------------------flyer section styling--------------------------------------------*/
+.flyers{
+    background: black;
+    max-width: 1440px;
+}
+
+.flyer-containor h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 5rem;
+}
+
 .flyers .linescroll .card{
     padding: 25px 35px;
-    background-color: black;
     border-radius: 12px;
 }
 

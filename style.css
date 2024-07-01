@@ -336,7 +336,7 @@ section{
 }
 
 .about-content h5{
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-top: 5px;
     color: color;
     font-weight: 600;
@@ -381,7 +381,7 @@ section{
 /*-----------------------------------------Portfolio section style-----------------------------------------------*/
 .portfolio{
     background-color: #ffa60038;
-    min-height: 130vh;
+    min-height: 125vh;
     width: 100%;
 }
 
